@@ -27,8 +27,9 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
-  'get /api/list': 'ArticlesController.list',
-  'get /api/add': 'ArticlesController.add'
+  'get /articles/list': 'ArticlesController.list',
+  'get /articles/add': 'ArticlesController.add',
+  'post /articles/create' : 'ArticlesController.create'
 
   /***************************************************************************
   *                                                                          *
