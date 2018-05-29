@@ -29,7 +29,10 @@ module.exports.routes = {
   },
   'get /articles/list': 'ArticlesController.list',
   'get /articles/add': 'ArticlesController.add',
-  'post /articles/create' : 'ArticlesController.create'
+  'post /articles/create': 'ArticlesController.create',
+  'post /articles/delete/:id': 'ArticlesController.delete',
+  'post /articles/edit/:id': 'ArticlesController.findOne',
+  'post /articles/update': 'ArticlesController.update'
 
   /***************************************************************************
   *                                                                          *
